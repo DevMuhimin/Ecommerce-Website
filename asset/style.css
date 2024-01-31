@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1{
+    font-size: 60px;
+    line-height: 74px;
+    color: #222;
+}
+h2{
+    font-size: 56px;
+    line-height: 60px;
+    color: #222;
+}
+h4{
+    font-size: 30px;
+    color: #222;
+}
+h6{
+    font-size: 15px;
+    font-weight: 700;
+}
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+#section-p1{
+    padding: 40px 80px;
+}
+
+/* Header Start*/
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 0px 5px 15px #d9d5d5a3;
+    background-color: #e3e6f3;
+    position:sticky;
+    top: 0;
+    left: 0;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li
+{
+    list-style-type: none;
+    padding: 0px 30px ;
+    position: relative;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    color: #088178;
+}
+
+.navbar li a.active::after,
+.navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Hero start */
+.hero{
+    background-image: url(images/hero4.png);
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h4{
+    padding-bottom: 15px;
+}
+
+.hero h1{
+    color: #088178;
+}
+
+.hero button{
+    background-image: url(images/button.png);
+    background-color: transparent;
+    border: none;
+    padding: 14px 80px 14px 65px;
+    color: #088178;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* features part */
+
+.features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fe-box{
+    width: 180px;
+    text-align: center;
+    box-shadow: 3px 2px 20px #f7f6f6fb;
+    /* border: 1px solid #cce7d0; */
+    padding: 25px 15px;
+    border-radius: 10px;
+    margin: 15px;
+    border: 0.4px solid #0abbaf;
+}
+
+.fe-box:hover{
+    box-shadow: 2px 2px 15px #0f0c0c2f;
+}
+
+.fe-box h6{
+    background-color: #fddde4;
+    padding: 9px;
+    color:#088178;
+}
+
+.fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+
+.fe-box:nth-child(3) h6{
+    background-color: #d1e8f2;
+}
+
+.fe-box:nth-child(4) h6{
+    background-color: #cdd4f8;
+}
+
+.fe-box:nth-child(5) h6{
+    background-color: #f6dbf6;
+}
+
+.fe-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+
